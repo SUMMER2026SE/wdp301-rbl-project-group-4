@@ -1,0 +1,26 @@
+# Dependency directories
+**/node_modules/
+
+# Production build outputs
+**/dist/
+**/dist-ssr/
+backend/dist/
+frontend/dist/
+
+# Runtime uploads
+backend/uploads/
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment variables / Secrets
+**/.env
+**/.env.local
+**/.env.*.local
+**/*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
