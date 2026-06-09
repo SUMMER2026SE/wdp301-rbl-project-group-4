@@ -13,6 +13,7 @@ import { ReviewsModule } from './modules/reviews/reviews.module';
 import { DisputesModule } from './modules/disputes/disputes.module';
 import { NotificationsModule } from './modules/notifications/notifications.module';
 import { AuditModule } from './modules/audit/audit.module';
+import { ChatModule } from './modules/chat/chat.module';
 
 @Module({
   imports: [
@@ -36,6 +37,7 @@ import { AuditModule } from './modules/audit/audit.module';
     DisputesModule,
     NotificationsModule,
     AuditModule,
+    ChatModule,
   ],
   controllers: [AppController],
   providers: [AppService],

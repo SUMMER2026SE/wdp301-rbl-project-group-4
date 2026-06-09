@@ -78,12 +78,12 @@ export const MainLayout: React.FC = () => {
               Khám phá
             </Link>
 
-            <a 
-              href="/#rentals" 
-              className={`vh-header-nav-link-custom ${location.hash === '#rentals' ? 'active' : ''}`}
+            <Link 
+              to={ROUTES.RENTALS} 
+              className={`vh-header-nav-link-custom ${location.pathname === ROUTES.RENTALS ? 'active' : ''}`}
             >
               Cho thuê
-            </a>
+            </Link>
 
             <a 
               href="/#photographers" 
@@ -200,7 +200,7 @@ export const MainLayout: React.FC = () => {
               </div>
             ) : (
               <Link to={ROUTES.LOGIN} className="vh-btn vh-btn-primary vh-btn-sm" style={{ borderRadius: '8px', padding: '8px 20px', fontWeight: 600 }}>
-                SIGN IN
+                ĐĂNG NHẬP
               </Link>
             )}
           </div>

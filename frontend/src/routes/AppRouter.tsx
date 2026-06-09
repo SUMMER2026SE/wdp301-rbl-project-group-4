@@ -12,6 +12,7 @@ import PublicRoute from './PublicRoute';
 
 // Pages
 import LandingPage from '../pages/LandingPage';
+import { AoDaiListingPage } from '../pages/rentals/AoDaiListingPage';
 import LoginPage from '../pages/auth/LoginPage';
 import RegisterPage from '../pages/auth/RegisterPage';
 import VerifyOtpPage from '../pages/auth/VerifyOtpPage';
@@ -28,6 +29,7 @@ export const AppRouter: React.FC = () => {
       {/* Public Pages wrapped in MainLayout */}
       <Route element={<MainLayout />}>
         <Route path={ROUTES.LANDING} element={<LandingPage />} />
+        <Route path={ROUTES.RENTALS} element={<AoDaiListingPage />} />
       </Route>
 
       {/* Google OAuth Callback Handler */}
